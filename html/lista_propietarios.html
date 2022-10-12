@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+  <body class="color1">
+    <header class="container-fluid " id="headerPrincipal">
+      <div class=" align-self-center">
+        <h1 class="align-self-center">Clínica de mascotas</h1>
+      </div>
+
+      <div  class=" align-self-center">
+        <img src="../img/clinica.png" width="100px" height="100px">
+      </div>
+    </header>
+
+    <nav class="container-fluid ">
+      <div class="row">
+
+        <div class="col-12 col-md-1" >
+          <center>
+            <a href="../index.html"><h6>Inicio</h6></a>
+          </center>
+          
+        </div>
+
+        <div class="col-12 col-md-3 col-lg-2">
+          <center>
+              <a href="lista_propietarios.html"><h6>Lista Propietario</h6></a>
+          </center>
+           
+        </div>
+
+        <div class="col-12 col-md-3 col-lg-2">
+          <center>
+            <a href="agregar_mascotas.html"><h6> Agregar Mascota</h6></a>
+          </center>
+           
+        </div>
+
+      </div>
+    </nav>
+    
+       <header class="container-fluid d-flex justify-content-center ">
+      <div class="colorText1">
+        <h2><strong>Agregar Mascotas</strong></h2>
+      </div>
+    </header>
+    <div class="container-fluid "></div>
+      <header class="row colorText2">
+        <div class=" col-12 col-md-7 d-flex justify-content-center">
+          <h3>Listado de Propietarios</h3>
+        </div>
+      </header>
+    
+    
+      <div class="row">
+       
+        <section class="col-12 col-md-7 ">
+          <table id="lista">
+            <tr>
+              <th style="width: 8%;"><center>Nombre</center></th>
+              <th style="width: 12%;"><center>Apellido</center></th>
+              <th style="width: 20%;"><center>Direccion</center></th>
+              <th style="width: 12%;"><center>Telefono</center></th>
+              <th style="width: 18%;"><center>Opcion</center></th>
+            </tr>
+            <tr class="color3">
+              <td>Pepito</td>
+              <td>Suarez</td>
+              <td>el parque</td>
+              <td>3189875179</td>
+              <td><a href="" id='ver_detalles' class='ver_detalles'>Ver detalles</a></td>
+            </tr>
+            <tr class="color2">
+              <td>Andres</td>
+              <td>Cruz</td>
+              <td>la u</td>
+              <td>3186437979</td>
+              <td><a href="" id='ver_detalles' class='ver_detalles'>Ver detalles</a></td>
+            </tr>
+            <tr class="color3">
+              <td>Daniela</td>
+              <td>Bonfante</td>
+              <td>concepcion</td>
+              <td>312798462</td>
+              <td><a href="." id='ver_detalles' class='ver_detalles'>Ver detalles</a></td>
+            </tr>
+            <tr class="color2">
+              <td>Carlos</td>
+              <td>Perez</td>
+              <td>gaira</td>
+              <td>135798465798</td>
+              <td><a href="" id='ver_detalles' class='ver_detalles'>Ver detalles</a></td>
+            </tr>
+            <tr class="color3">
+              <td>Estelia</td>
+              <td>Ni idea</td>
+              <td>rodadero</td>
+              <td>79846798462</td>
+              <td><a href="" id='ver_detalles' class='ver_detalles'>Ver detalles</a></td>
+            </tr>
+          </table>
+        </section>
+        <aside class="col-12 col-md-5 ">
+          <header class=" colorText2">
+            <div>
+              <h4>Ver/Editar detalles del propietario</h4>
+            </div>
+          </header>
+          <form id="form" method="GET">
+            
+            <div class="row fila">
+              <div class="col-2 col-sm-2 col-md-3">
+                <label>Nombre:</label>
+              </div>
+              <div class="col-9 col-sm-8">
+                <input type="text" id="nombre" name="nombre"/>
+              </div>
+            </div>
+
+            <div class="row fila">
+              <div class="col-2 col-sm-2 col-md-3">
+                <label>Apellido:</label>  
+              </div>
+              <div class="col-9 col-sm-8 ">
+                <input type="text" id="apellido" name="apellido"/>
+              </div>
+            </div>
+
+            <div class="row fila">
+              <div class="col-2 col-sm-2 col-md-3">
+                  <label>Dirección:</label> 
+              </div>
+              <div class="col-9 col-sm-8">
+                <input type="text" id="direccion" name="direccion"/>
+              </div>
+            </div>
+              
+            <div class="row fila">
+              <div class="col-2 col-sm-2 col-md-3">
+                  <label>Telefono:</label>
+              </div>
+              <div class="col-9 col-sm-8">
+                <input type="tel" id="telefono" name="telefono"/>
+              </div>
+            </div>
+              
+            <div class="row fila">
+                <div class="col-2 col-sm-2 col-md-3">
+                </div>
+                <div class="col-9 col-sm-8">
+                    <button style="margin-top: 7px;" name="editar" id="editar" >Editar</button>
+                </div>
+              </div>
+          </form>
+          <br>
+          <br>
+
+          <div id="contenedor_addMascotas" class="row">
+            <table id='lista_m' class="col-9">
+              <tr>
+                <th style="width: 3%;">Nombre</th>
+                <th style="width: 8%;">Tipo</th>
+                <th style="width: 13%;">Fecha de nacimiento</th>
+                <th style="width: 3%;">Opcion</th>
+              </tr>
+           </table>
+
+          </div>
+          <br>
+          <br>
+          
+          <div id="contenedor_lista_Mascotas"">
+            
+
+          </div>
+        </aside>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script>var cont = 1;
+        var color = "color2";
+      </script>
+    <script src="../js/JQuery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/logica_propietarios.js" type="text/javascript"></script>
+    
+  </body>
+
+</html>

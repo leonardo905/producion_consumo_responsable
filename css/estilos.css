@@ -1,0 +1,62 @@
+.color1{background: #e9e9e9;}
+.color2{background: #E6E6E6;}
+.color3{background: #FFFFFF;}
+.colorText1{color: #b40808;margin-top: 3px;}
+.colorText2{color:#DF0101;margin-top: 3px;}
+
+th{
+    background: #6E6E6E;
+    border-right: 1px solid black;
+}
+
+td{
+    border-right: 1px solid black;
+}
+#headerPrincipal{
+    padding: 2%;
+    display: flex;
+    background-color: #00437a;
+    justify-content: space-between;
+    color: #cca338;
+}
+nav{
+    
+    background-color:  #cca338;
+    color: white;
+}
+nav div div{
+    padding-top: 3px;
+}
+nav div div:hover{
+    background-color: #b40808;
+}
+nav a{
+    color: white;
+}
+nav a :hover{
+    color: white;
+}
+.fila{
+    margin-top: 2px;
+    
+}
+
+.tabla{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+select{
+    width: 80%;
+}
+input{
+    width: 80%;
+}
+#fechaNacimiento{
+    width: 60%;
+}
